@@ -57,8 +57,8 @@ export default {};
 <style scoped>
 .container{
        background:#ffffff;
-       width:500px;
-       max-width: 500px;
+       /* width:500px;
+       max-width: 500px; */
        padding:60px 10px;
        border-radius: 20px;
        margin:60px auto;
@@ -205,5 +205,12 @@ footer:hover{
        .price-column label{
               width:318px;
        }
+       }
+
+       @media (min-width : 426px) and (max-width : 768px) {
+              .container{
+                     width:100%;
+                     max-width:100%;
+              }
        }
 </style>

@@ -63,8 +63,8 @@ export default {};
 
 <style scoped>
 .wrapper {
-  width: 900px;
-  max-width: 900px;
+  /* width: 900px;
+  max-width: 900px; */
   margin: 0 auto;
   padding: 100px 0px;
 }
@@ -78,6 +78,7 @@ export default {};
   grid-template-columns: repeat(3, 1fr); /* Create three equal columns */
   gap: 10px; /* Add gap between items */
   text-align: center;
+  padding:0px 40px;
 }
 
 .wht-bg {
@@ -149,7 +150,8 @@ footer div{
 @media only screen and (min-width: 428px) and (max-width: 600px){
 	/*Big smartphones [426px -> 600px]*/
   .wrapper{
-    /* background: pink; */
+   width:100%;
+   max-width: 100%;
 
   }
   .grid-container{
@@ -181,6 +183,7 @@ footer div{
   }
   .grid-container{
     grid-template-columns: 1fr;
+    padding:0px 20px;
   }
   .wrapper h3 {
     font-size: 30px;
@@ -191,5 +194,12 @@ footer div{
 width:340px;
 max-width:340px;
 }
+}
+@media screen and (min-width: 601px) and (max-width:768px){
+  .grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding:0px 20px;
+  }
 }
 </style>

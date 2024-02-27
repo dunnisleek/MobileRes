@@ -43,30 +43,31 @@
 <style scoped>
 .wrapper{
 
-  width:500px;
-  max-width: 500px;
- margin-left: 8rem;
- padding-bottom: 6rem;
 
+ padding:40px;
+ padding-bottom: 6rem;
+  margin: 0 auto;
   /* padding:10rem; */
  
 }
 .wrap-rows{
   display:flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  /* justify-content: space-between; */
   flex-direction: row;
   gap:50px;
   /* width:1300px; */
 }
 .row img{
-  width:300px;
+  width:100%;
 
 }
 .row{
   background: #ffffff;
   padding:30px;
   border-radius: 20px;
-  width:300px;
+  flex: 1 0 300px;
+  /* width:300px; */
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
 }
 .row h2{
@@ -116,14 +117,23 @@ button{
 @media only screen and (max-width: 425px){
 	/*Small smartphones [325px -> 425px]*/
   .wrapper{
-    padding:0rem;
+    padding:20px;
     margin-left: 0px;
   }
   .wrap-rows{
     flex-direction: column;
   }
   .row{
-    margin-left:10px;
+    /* margin-left:10px; */
   }
 }
+@media only screen and (min-width:426px) and (max-width: 600px){
+  .wrapper{
+   width:auto;
+  }
+  .wrap-rows{
+    flex-direction: column;
+  }
+}
+
 </style>

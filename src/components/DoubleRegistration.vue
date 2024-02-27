@@ -88,12 +88,8 @@
        color:#fff;
        text-transform: uppercase;
   }
-  @media only screen and (max-width: 600px){
-	/*Big smartphones [426px -> 600px]*/
-     .reg{
-          /* background:blue; */
-     }
-}
+
+
   @media only screen and (max-width: 425px){
 	/*Small smartphones [325px -> 425px]*/
      section{
@@ -119,5 +115,23 @@
      .centered{
           text-align: left;
      }
+     }
+     @media (min-width : 426px) and (max-width : 768px) {
+          .reg{
+               padding: 20px 60px;
+          }
+          .orangebg{
+               width:100%;
+               max-width:100%;
+          }
+          .para{
+               width:100%;
+               max-width:100%;
+          }
+          .wrap{
+               flex-direction: column;
+             text-align: center;
+               padding:0px;
+          }
      }
 </style>

@@ -1,39 +1,30 @@
 <template>
   <div>
    
-    <!-- <account-ui></account-ui> -->
-    <job-board></job-board>
+      <job-board></job-board>
     <login-screen></login-screen>
-    <subscription-pricing></subscription-pricing>
     <double-registration></double-registration>
-    <!-- <project-board></project-board>
-     -->
     <on-boarding></on-boarding>
  
   </div>
 
  </template>
 <script>
-import onBoarding from './components/onBoarding.vue';
 
-import DoubleRegistration from './components/DoubleRegistration.vue';
-
-import subscriptionPricing from './components/subscriptionPricing.vue';
-
-import LoginScreen from './components/LoginScreen.vue';
 import JobBoard from './components/JobBoard.vue';
+import LoginScreen from './components/LoginScreen.vue';
+import DoubleRegistration from './components/DoubleRegistration.vue';
+import onBoarding from './components/onBoarding.vue';
 
 
 
 export default {
   name: 'App',
   components: {
-  onBoarding,
-    DoubleRegistration,
-
-    subscriptionPricing,
-
-    LoginScreen,JobBoard
+ 
+    JobBoard,
+    LoginScreen,DoubleRegistration,
+    onBoarding 
  
     
   }

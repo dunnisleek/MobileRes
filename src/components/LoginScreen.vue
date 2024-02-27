@@ -43,7 +43,8 @@
  
 .loginWrap{
     background:#581a1a;
-    height: 100vh;
+    /* height: 100vh; */
+    padding:100px 0px;
     margin: 0 auto;
     display:flex;
     align-items: center;
@@ -173,7 +174,7 @@ footer ul li{
           } 
           .imgSection img{
               width:300px;
-              height:50vh;
+              height:auto;
        }
        footer{
               position:relative;
@@ -193,7 +194,7 @@ footer ul li{
        }
        .imgSection img{
               width:300px;
-              height:50vh;
+              height:auto;
        }
        .div .loginForm{
               padding-top: 0px;
@@ -210,5 +211,30 @@ footer ul li{
               padding-top:80px;
               padding-bottom:80px;
        }
+}
+@media only screen and (max-width: 768px){
+       .imgSection img{
+             
+              height:auto;
+       } 
+       footer ul{
+              position: relative;
+              /* padding-bottom: 0px;
+              flex-direction: column; */
+       }
+       footer ul li{
+              padding-left: 10px;
+       }
+}
+@media only screen and (max-width: 992px){
+       .imgSection img{
+             height:auto;
+      } 
+      .loginForm h2{
+       padding-bottom: 10px;
+      }
+      footer{
+       position: relative;
+      }
 }
 </style>
