@@ -150,12 +150,13 @@ footer ul li{
     max-width: 661px;
     }
     input{
-       width:189px;
+       width:auto;
     }
     .loginBtn, .socialBtn{
-       width:193px;
+       width:auto;
     }
     .socialBtn{
+       width:100%;
        font-size:16px;
        font-size: 16px;
     padding: 3px 6px;
@@ -219,8 +220,12 @@ footer ul li{
        } 
        footer ul{
               position: relative;
+              flex-direction: column;
+              gap:15px;
+              justify-content: center;
+              align-items:center ;
               /* padding-bottom: 0px;
-              flex-direction: column; */
+               */
        }
        footer ul li{
               padding-left: 10px;
@@ -235,6 +240,11 @@ footer ul li{
       }
       footer{
        position: relative;
+      }
+      footer ul{
+       flex-direction: column;
+       gap:20px;
+       padding-top:5px;
       }
 }
 </style>
